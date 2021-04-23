@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/mqkwagep"
+      method="POST"
+    >
+      <h1 class="heading">Contact form</h1>
+      <div class="form-group">
+        <div class="form-group">
+          <label class="form-label" for="Name"> Name: </label>
+          <input
+            class="form-input"
+            type="text"
+            name="Name"
+            required
+            id="Name"
+            placeholder="Name Surname"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email"> Your email: </label>
+          <input
+            class="form-input"
+            type="email"
+            name="_replyto"
+            required
+            id="email"
+            placeholder="example@gmail.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="Number"> Contact Number </label>
+          <input
+            class="form-input"
+            type="tel"
+            name="Number"
+            required
+            id="Number"
+            placeholder="072 123 4876"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label"> Your message: </label>
+          <textarea
+            class="form-input"
+            name="message"
+            id="message"
+            placeholder="Type message "
+            required
+          >
+          </textarea>
+        </div>
+      </div>
+      <!-- your other form fields go here -->
+
+      <button class="button" type="submit">Send</button>
+    </form>
+  </body>
+</html>
